@@ -1,0 +1,2 @@
+#Ignoring .env so they don't steal bot's key
+.env
