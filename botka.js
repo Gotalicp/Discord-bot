@@ -1,6 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const {Client, GatewayIntentBits, Message, Events, SlashCommandBuilder, Collection } = require('discord.js')
+const { VoiceConnectionStatus, AudioPlayerStatus } = require('@discordjs/voice');
 const dotenv = require('dotenv');
 dotenv.config();
 const client = new Client({
@@ -50,7 +51,7 @@ client.on(Events.InteractionCreate, async interaction => {
 });
 
 
-client.on('ready', ()=> {
+client.on('ready', ()=> { mn
     console.log('the bot is ready')
 })
 client.login(process.env.token)
