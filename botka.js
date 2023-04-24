@@ -51,7 +51,7 @@ client.on(Events.InteractionCreate, async interaction => {
 });
 
 
-client.on('ready', ()=> { mn
+client.on('ready', ()=> {
     console.log('the bot is ready')
 })
 client.login(process.env.token)
